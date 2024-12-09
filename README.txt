@@ -2,6 +2,8 @@ Sapling Spawn
 =====
 A mod that makes trees spread out and become dense forests over time.
 
+Saplings will only spawn on soil blocks. The sapling will be the same species as a nearby tree.
+
 I spent a lot of time trying to balance the growth rate and maximum tree density.
 I want it to be noticeable over time, but not so aggressive that it chokes the landscape.
 
