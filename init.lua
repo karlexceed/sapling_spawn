@@ -75,7 +75,7 @@ minetest.register_abm({
 	neighbors = {"group:soil"},
 	without_neighbors = {"group:tree"},
 	interval = 240,
-	chance = 256,
+	chance = 2048,
 	action = function(...)
 		sapling_spawn.spawn_saplings(...)
 	end,
