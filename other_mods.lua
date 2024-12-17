@@ -52,6 +52,35 @@ if mod_loaded('everness') then
 end
 
 
+-- Extra Biomes
+-- Since ebiomes requires default, I used those saplings for the acacia, aspen, and pine trees.
+if mod_loaded('ebiomes') then
+	sapling_ref["ebiomes:acacia_tree"] = "default:acacia_sapling"
+	sapling_ref["ebiomes:afzelia_tree"] = "ebiomes:afzelia_sapling"
+	sapling_ref["ebiomes:alder_tree"] = "ebiomes:alder_sapling"
+	sapling_ref["ebiomes:ash_tree"] = "ebiomes:ash_sapling"
+	sapling_ref["ebiomes:aspen_tree"] = "default:aspen_sapling"
+	sapling_ref["ebiomes:beech_tree"] = "ebiomes:beech_sapling"
+	sapling_ref["ebiomes:birch_tree"] = "ebiomes:birch_sapling"
+	sapling_ref["ebiomes:chestnut_tree"] = "ebiomes:chestnut_sapling"
+	sapling_ref["ebiomes:cypress_tree"] = "ebiomes:cypress_sapling"
+	sapling_ref["ebiomes:downy_birch_tree"] = "ebiomes:downy_birch_sapling"
+	sapling_ref["ebiomes:limba_tree"] = "ebiomes:limba_sapling"
+	sapling_ref["ebiomes:maple_tree"] = "ebiomes:maple_sapling"
+	sapling_ref["ebiomes:mizunara_tree"] = "ebiomes:mizunara_sapling"
+	sapling_ref["ebiomes:oak_tree"] = "ebiomes:oak_sapling"
+	sapling_ref["ebiomes:olive_tree"] = "ebiomes:olive_sapling"
+	sapling_ref["ebiomes:pear_tree"] = "ebiomes:pear_sapling"
+	sapling_ref["ebiomes:quince_tree"] = "ebiomes:quince_sapling"
+	sapling_ref["ebiomes:siri_tree"] = "ebiomes:siri_sapling"
+	sapling_ref["ebiomes:small_pine_tree"] = "default:pine_sapling"
+	sapling_ref["ebiomes:stoneoak_tree"] = "ebiomes:stoneoak_sapling"
+	sapling_ref["ebiomes:sugi_tree"] = "ebiomes:sugi_sapling"
+	sapling_ref["ebiomes:tamarind_tree"] = "ebiomes:tamarind_sapling"
+	sapling_ref["ebiomes:willow_tree"] = "ebiomes:willow_sapling"
+end
+
+
 -- Moretrees
 if mod_loaded('moretrees') then
 	sapling_ref["moretrees:beech_trunk"] = "moretrees:beech_sapling"
