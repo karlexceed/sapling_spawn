@@ -65,6 +65,7 @@ if mod_loaded('ebiomes') then
 	sapling_ref["ebiomes:chestnut_tree"] = "ebiomes:chestnut_sapling"
 	sapling_ref["ebiomes:cypress_tree"] = "ebiomes:cypress_sapling"
 	sapling_ref["ebiomes:downy_birch_tree"] = "ebiomes:downy_birch_sapling"
+	sapling_ref["ebiomes:hornbeam_tree"] = "ebiomes:hornbeam_sapling"
 	sapling_ref["ebiomes:limba_tree"] = "ebiomes:limba_sapling"
 	sapling_ref["ebiomes:maple_tree"] = "ebiomes:maple_sapling"
 	sapling_ref["ebiomes:mizunara_tree"] = "ebiomes:mizunara_sapling"
