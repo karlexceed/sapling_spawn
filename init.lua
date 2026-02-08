@@ -23,8 +23,12 @@ function sapling_spawn.spawn_saplings(pos, node)
 	
 	-- Block above needs to be air.
 	local above = {x = pos.x, y = pos.y + 1, z = pos.z}
-	if not core.get_node(above).name == "air" then
-		return
+	local above_node_name = core.get_node(above).name
+	if above_node_name ~= "air" then
+		-- ...but it can be flora
+		if core.get_item_group(above_node_name, "flora") ~= 0 then
+			return
+		end
 	end
 	
 	-- The block cannot be underwater.
