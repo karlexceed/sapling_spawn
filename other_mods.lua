@@ -100,3 +100,22 @@ if mod_loaded('moretrees') then
 	sapling_ref["moretrees:fir_trunk"] = "moretrees:fir_sapling"
 	sapling_ref["moretrees:jungletree_trunk"] = "moretrees:jungletree_sapling"
 end
+
+
+-- Naturalbiomes
+-- Courtesy of Opons
+if mod_loaded('naturalbiomes') then
+	sapling_ref["naturalbiomes:acacia_trunk"] = "naturalbiomes:acacia_sapling"
+	sapling_ref["naturalbiomes:alder_trunk"] = "naturalbiomes:alder_sapling"
+	sapling_ref["naturalbiomes:alppine1_trunk"] = "naturalbiomes:alppine1_sapling"
+	sapling_ref["naturalbiomes:alppine2_trunk"] = "naturalbiomes:alppine2_sapling"
+	sapling_ref["naturalbiomes:bamboo_trunk"] = "naturalbiomes:bamboo_sapling"
+	sapling_ref["naturalbiomes:banana_trunk"] = "naturalbiomes:banana_sapling"
+	sapling_ref["naturalbiomes:heath_birch_trunk"] = "naturalbiomes:birch_sapling"
+	sapling_ref["naturalbiomes:heath_juniper_trunk"] = "naturalbiomes:juniper_sapling"
+	sapling_ref["naturalbiomes:olive_trunk"] = "naturalbiomes:olive_sapling"
+	sapling_ref["naturalbiomes:outback_trunk"] = "naturalbiomes:outback_sapling"
+	sapling_ref["naturalbiomes:pine_trunk"] = "naturalbiomes:pine_sapling"
+	sapling_ref["naturalbiomes:palm_trunk"] = "naturalbiomes:palm_sapling"
+	sapling_ref["naturalbiomes:heath_willow_trunk"] = "naturalbiomes:willow_sapling"
+end

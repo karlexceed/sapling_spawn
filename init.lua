@@ -21,18 +21,19 @@ function sapling_spawn.spawn_saplings(pos, node)
 		return
 	end
 	
-	-- Block above needs to be air.
+	-- Get info about the block above.
 	local above = {x = pos.x, y = pos.y + 1, z = pos.z}
 	local above_node_name = core.get_node(above).name
-	if above_node_name ~= "air" then
-		-- ...but it can be flora
-		if core.get_item_group(above_node_name, "flora") ~= 0 then
-			return
-		end
-	end
+	local above_node_def = core.registered_nodes[above_node_name]
 	
-	-- The block cannot be underwater.
-	if core.get_node(above).name == "default:water_source" or core.get_node(above).name == "default:river_water_source" then
+	-- Block above must be buildable_to (air, grass, flowers etc.)
+	-- Many thanks to TenPlus1 and rubenwardy for the advice on this check.
+	if not above_node_def or not above_node_def.buildable_to then
+		return
+	end
+
+	-- Block above cannot be water.
+	if above_node_def.liquidtype ~= "none" then
 		return
 	end
 	
